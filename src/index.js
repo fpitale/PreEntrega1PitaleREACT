@@ -4,15 +4,6 @@ import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-/* export {Inicio} from "./inicio"
-export {Alimentos} from "./alimentos"
-export {Contacto} from "./contacto"
-export {Salud} from "./salud"
-export {ItemListContainer} from "./ItemListContainer"
-
-
- */
-
 
 
 

@@ -16,9 +16,6 @@ const Presentacion = () => {
         La alimentación es fundamental para su salud, vitalidad y bienestar, y debemos procurar que, a través de ella, reciba todos los nutrientes necesarios para una vida sana y feliz. Una buena alimentación es indispensable para cuidar la salud y mejorar la calidad de vida de nuestros animales de compañía.
       </p>
 
-      <Button text="Alimentos" type="button" />
-      <Button text="Salud y Higiene" type="button" />
-      <Button text="Contactos" type="button" />
     </div>
   );
 };

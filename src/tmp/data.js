@@ -1,36 +1,42 @@
 
 export const categories = [
- {id:1, name: "category 1"} ,
- {id:2, name: "category 1"} ,
- {id:3, name: "category 1"} ,
- {id:4, name: "category 1"} ,
- {id:5, name: "category 1"} ,
+ {id:"1", name: "Alimentos"} ,
+ {id:"2", name: "Salud"} ,
+ {id:"3", name: "Contacto"} 
 ];
 
 export const itens= [
-    {id: 1, 
-    name: "Astro",
-    categoryId: 1,
-    description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!"} ,
+    {id: "1", 
+    name: "Astro selection adulto 15 +",
+    categoryId: "1",
+    precio: "2.048",
+    description: "Recomendado para perro adulto./n Formulado para todos los tamaños",
+    fernando: "papa"
+    
+} ,
 
-    {id: 2, 
+    {id: "2", 
         name: "Golden",
-        categoryId: 2,
+        categoryId: "1",
+        precio: "2.048",
         description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!"} ,
 
-        {id: 3, 
+        {id: "3", 
             name: "Nero",
-            categoryId: 3,
+            categoryId: "2",
+            precio: "2.048",
             description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!"} ,
 
-            {id: 4, 
+            {id: "4", 
                 name: "Large",
-                categoryId: 4,
+                categoryId: "2",
+                precio: " 2.048",
                 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!"} ,
 
-                {id: 5, 
+                {id: "5", 
                     name: "Tree Dog",
-                    categoryId: 5,
+                    categoryId: "3",
+                    precio: "2.048",
                     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!"} ,
 
                    

@@ -1,19 +1,28 @@
-import {Card, Button} from 'react-bootstrap';
 
-
+import { Col, Row } from "react-bootstrap";
+import { Item } from "../Item";
 
 const ItemList = ({ itens }) => {
+ return(
+    <Row>
+        {
+         itens.map((item) => (   
+        <Col>
+        <Item
+      name={item.name}
+      description={item.description}
+      id={item.id}
+      categoryId={item.categoryId}
+      onItemClicked={item.onItemClicked}
+      textButton={item.textButton}
+      precio={item.precio} 
+    />
+     </Col>
+  ))};
 
-    return itens.map((item) => (
-        <Card key={item.name}>
-         <Card.Body>
-        <Card.Title>{item.name}</Card.Title>
-        <Card.Text>{item.description}</Card.Text>
-        <Button variant="primary"> Ver detalle </Button>
-          
-         </Card.Body>
-          </Card>
-         )) 
-}
+    </Row>
+  ) 
+    
+};
 
-export {ItemList}
+export { ItemList };

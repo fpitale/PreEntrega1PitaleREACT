@@ -13,9 +13,7 @@ const NavbarBoot = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/" >Inicio</Link>
-        </li>
+        
         <li className="nav-item">
           <Link className="nav-link" to="/Alimentos y golosinas">Alimentos</Link>
         </li>
@@ -42,3 +40,9 @@ const NavbarBoot = () => {
 }
 
 export default NavbarBoot
+
+
+
+/* <li className="nav-item">
+          <Link className="nav-link active" aria-current="page" to="/" >Inicio</Link>
+        </li> */

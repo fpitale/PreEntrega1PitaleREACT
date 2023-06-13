@@ -1,14 +1,15 @@
+ import { Item } from '../../components/common'; 
 import { itens } from '../../tmp/data';
 
-const getItens = async () => {
+const getItens = async (catId) => {
   return new Promise((resolve, reject) => {
-    resolve(itens);
+    resolve(itens.filter((Item) => Item.categoryId === catId));
   });
 };
 
 const getItenById = async (id) => {
   return new Promise((resolve, reject) => {
-    resolve(itens.find((iten) => iten.id === id));
+    resolve(itens.find((item) => item.id === id));
   });
 };
 
