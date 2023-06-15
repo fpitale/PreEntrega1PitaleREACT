@@ -1,18 +1,28 @@
-import { Card, Container } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
-const Item = ({ id, name, description, onItemClicked, textButton, precio, images }) => {
+const Item = ({
+  id,
+  name,
+  description,
+  onItemClicked,
+  textButton,
+  precio,
+  images,
+}) => {
   return (
     <Card key={id}>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <Card.Text>{precio.toString()}</Card.Text>
+        <Card.Text>{precio}</Card.Text>
         <div className="image-container">
           <img src={images[0]} alt={name} />
         </div>
-       {/*  <Button variant="primary" onClick={onItemClicked}>
-          {textButton}
-        </Button> */}
+        {/*   {
+          <Button variant="primary" onClick={onItemClicked}>
+            {textButton}
+          </Button>
+        } */}
       </Card.Body>
     </Card>
   );

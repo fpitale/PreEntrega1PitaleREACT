@@ -12,10 +12,4 @@ const getCategoryById = async (id) => {
   });
 };
 
-const updateCategory = async (category) => {}
-
-const deleteCategory = async (id) => {}
-
-const createCategory = async (category) => {}
-
-export { getCategories, getCategoryById };
+export { getCategories, getCategoryById};

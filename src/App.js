@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import CartWidget from './components/CartWidget/CartWidget';
-import { Alimentos, Contacto, ItemListContainer, ItemDetailContainer } from './pages';
+import { Alimentos, Contacto, ItemDetailContainer, ItemListContainer } from './pages';
 import NavbarBoot from './components/navbarbootstrap/navbar_bootstrap';
 
 

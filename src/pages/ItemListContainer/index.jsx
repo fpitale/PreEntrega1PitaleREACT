@@ -1,11 +1,12 @@
-import { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { Container } from 'react-bootstrap';
+import { useEffect, useState } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import { getItens } from "../../services/Itens";
-import { Item, ItemList } from "../../components/common";
+import { ItemList } from "../../components/common";
+import { Item } from "../../components/common/Item";
 import { getCategories } from "../../services/categories";
 import { Navegacion } from "../../components/barra-navegacion/nav";
-import { Presentacion } from '../inicio/presentacion';
+import { Presentacion } from "../inicio/presentacion";
 
 const ItemListContainer = () => {
   const { catId } = useParams();
@@ -28,9 +29,8 @@ const ItemListContainer = () => {
 
   return (
     <>
-  {      <Presentacion/>}
+      {<Presentacion />}
       <Container>
-      
         <ItemList
           itens={itens.map((item) => ({
             ...item,
@@ -39,12 +39,8 @@ const ItemListContainer = () => {
           }))}
         />
         <Navegacion categories={categories} />
-
       </Container>
-
-   
     </>
-   
   );
 };
 

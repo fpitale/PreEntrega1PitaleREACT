@@ -1,5 +1,5 @@
-import { NavLink } from 'react-router-dom';
-import './links.css';
+import { NavLink } from "react-router-dom";
+import "./links.css";
 
 const Navegacion = ({ categories }) => {
   return (

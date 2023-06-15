@@ -5,7 +5,7 @@ export const categories = [
   ];
   
 
-export const itens= [
+export const itens = [
     {id: "1", 
     name: "Astro selection adulto 15 +",
     categoryId: "1",
@@ -79,7 +79,6 @@ export const itens= [
                     precio: "2.780,00",
                     description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, sunt. Enim aliquid minus alias. In, ipsum dolorem rerum animi, ut porro sapiente recusandae fugiat aspernatur suscipit modi, eum inventore officia!",
                 images: "/img/comida-gato/kitten_3d_dir_1.png"} ,
-
  
 ]
 

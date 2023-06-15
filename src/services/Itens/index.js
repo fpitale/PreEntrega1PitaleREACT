@@ -1,4 +1,4 @@
- import { Item } from '../../components/common'; 
+
 import { itens } from '../../tmp/data';
 
 const getItens = async (catId) => {
@@ -12,6 +12,7 @@ const getItenById = async (id) => {
     resolve(itens.find((item) => item.id === id));
   });
 };
+
 
 const updateIten = async (iten) => {}
 

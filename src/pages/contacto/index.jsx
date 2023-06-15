@@ -1,9 +1,10 @@
 import React from 'react';
 import './contacto.css';
+
 const Contacto = () => {
   return (
     <>
-      <h1>La mananda - Contactos</h1>
+      <h1>La manada - Contactos</h1>
       <div className="contact_form">
         <div className="formulario">
           <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
@@ -73,21 +74,24 @@ const Contacto = () => {
           </form>
         </div>
       </div>
-   
 
-<div className="texto__ubicacion">
-  Podrá encontrarnos en esta dirección
-</div>
+      <div className="texto__ubicacion">
+        Podrá encontrarnos en esta dirección
+      </div>
 
-<div className="mapa">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104657.70577423919!2d-54.98154485023045!3d-34.942738300745965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1671332282840!5m2!1ses-419!2suy"
-    width="600" height="450" style={{ border: '0' }} allowFullScreen="" loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"></iframe>
-</div>
-
-
- </>
+      <div className="mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d104657.70577423919!2d-54.98154485023045!3d-34.942738300745965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9575059ec8c40bbd%3A0x9bdd0183c2d3cf93!2sPunta%20del%20Este%2C%20Departamento%20de%20Maldonado!5e0!3m2!1ses-419!2suy!4v1671332282840!5m2!1ses-419!2suy"
+          title="Mapa"
+          width="600"
+          height="450"
+          style={{ border: '0', width: '100%', height: '100%' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </>
   );
 };
 
