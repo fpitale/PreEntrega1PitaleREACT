@@ -14,19 +14,19 @@ const NavbarBoot = () => {
     <div className="collapse navbar-collapse" id="navbarNavDropdown">
       <ul className="navbar-nav">
         
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link" to="/Alimentos y golosinas">Alimentos</Link>
-        </li>
-        <li className="nav-item">
+        </li> */}
+       {/*  <li className="nav-item">
           <Link className="nav-link" to='/salud'>Salud y Higiene</Link>
-        </li>
+        </li> */}
         <li className="nav-item dropdown">
           <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Contactanos
           </Link>
           <ul className="dropdown-menu">
-            <li><Link className="dropdown-item" to="/contacto">Donde nos encontrar</Link></li>
-            <li><Link className="dropdown-item" to="/contacto">Trabaje con nosotros</Link></li>
+            {/* <li><Link className="dropdown-item" to="/contacto">Donde nos encontrar</Link></li> */}
+           {/*  <li><Link className="dropdown-item" to="/contacto">Trabaje con nosotros</Link></li> */}
             <li><Link className="dropdown-item" to="/contacto">Contactos</Link></li>
             </ul>
         </li>

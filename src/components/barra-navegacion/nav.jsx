@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import './links.css';
 
 const Navegacion = ({ categories }) => {
   return (
@@ -7,7 +7,10 @@ const Navegacion = ({ categories }) => {
       <ul>
         {categories.map((category) => (
           <li key={category.id}>
-            <NavLink to={`/category/${category.id}`}>
+            <NavLink
+              to={`/category/${category.id}`}
+              className="estilos" // Atualize a classe para "estilos"
+            >
               {category.name}
             </NavLink>
           </li>

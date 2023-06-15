@@ -1,0 +1,12 @@
+
+    .cart {
+         width: 3%;
+    height: 10px;
+        position: fixed;
+        top: 2%;
+        right: 0px;
+
+        transform: translateY(-50%);
+    }
+    
+    

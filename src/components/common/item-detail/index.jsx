@@ -1,21 +1,22 @@
-import { Card, Col, Row } from "react-bootstrap";
 
-const ItemDetail = ({ id, name, description, categoryId, precio }) => {
+import { Card, Container } from "react-bootstrap";
+
+
+const ItemDetail = ({ id, name, description, precio, images }) => {
   return (
-    <Row>
-      <Col>
-        <Card key={id}>
-          <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>{description}</Card.Text>
-            <Card.Text>${precio}</Card.Text>
-            {/* <Button variant="primary"
-              onClick={onItemClicked} 
-            > {textButton} </Button> */}
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
+    <Container>
+      <Card key={id}>
+        <Card.Body>
+          <Card.Title>{name}</Card.Title>
+          <Card.Text>{description}</Card.Text>
+          <Card.Text>{precio.toString()}</Card.Text>
+          <div className="image-container">
+<img src={images} alt={name} />
+</div>
+          
+        </Card.Body>
+      </Card>
+    </Container>
   );
 };
 

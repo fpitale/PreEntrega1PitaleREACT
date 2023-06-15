@@ -18,13 +18,9 @@ const ItemDetailContainer = () => {
 
   return (
     <div>
-      <ItemDetail
-        id={item.id}
-        name={item.name}
-        description={item.description}
-        categoryId={item.categoryId}
-        precio={item.precio}
-      />
+     <ItemDetail {...item} />
+
+      
     </div>
   );
 };
