@@ -14,10 +14,5 @@ const getItenById = async (id) => {
 };
 
 
-const updateIten = async (iten) => {}
-
-const deleteIten = async (id) => {}
-
-const createIten = async (itens) => {}
 
 export { getItens, getItenById };
