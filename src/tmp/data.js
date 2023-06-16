@@ -5,7 +5,7 @@
   ];
   
 
-const items = [
+export const items = [
     {id: 1, 
     name: "Astro selection adulto 15 +",
     categoryId: "Alimentos para perros" ,
@@ -105,3 +105,4 @@ export const getProducts = () => {
       }, 1000);
     });
   };
+

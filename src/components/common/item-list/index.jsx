@@ -1,10 +1,10 @@
 import { Col, Row } from "react-bootstrap";
 import { Item } from "../Item";
 
-const ItemList = ({ itens }) => {
+const ItemList = ({ items }) => {
   return (
     <Row>
-      {itens.map((item) => (
+      {items.map((item) => (
         <Col key={item.id}>
           <Item
             name={item.name}
@@ -13,7 +13,7 @@ const ItemList = ({ itens }) => {
             categoryId={item.categoryId}
             onItemClicked={item.onItemClicked}
             textButton={item.textButton}
-           precio={item.precio} 
+            precio={item.precio}
             images={[item.images]}
           />
         </Col>

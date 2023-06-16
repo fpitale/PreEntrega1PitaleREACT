@@ -1,5 +1,6 @@
 import { Card, Col, Row } from "react-bootstrap";
-import { Itens } from "../../../services/Itens";
+import { Item } from "../Item";
+
 const ItemDetail = ({ id, name, description, precio }) => {
   return (
     <Row>

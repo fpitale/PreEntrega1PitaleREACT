@@ -1,18 +1,17 @@
+import { items } from '../../tmp/data';
 
-import { itens } from '../../tmp/data';
-
-const getItens = async (catId) => {
+const getItems = async (catId) => {
   return new Promise((resolve, reject) => {
-    resolve(itens.filter((Item) => Item.categoryId === catId));
+    resolve(items.filter((Item) => Item.categoryId === catId));
   });
 };
 
-const getItenById = async (id) => {
+const getItemById = async (id) => {
   return new Promise((resolve, reject) => {
-    resolve(itens.find((item) => item.id === id));
+    resolve(items.find((item) => item.id === id));
   });
 };
 
 
 
-export { getItens, getItenById };
+export { getItems, getItemById };
