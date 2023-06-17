@@ -1,5 +1,5 @@
 
- const categories = [
+ export const categories = [
     { id: "Alimentos para perros" , name: "Alimentos para perros" },
     { id: "Alimentos para gatos" , name: "Alimentos para gatos"}
   ];

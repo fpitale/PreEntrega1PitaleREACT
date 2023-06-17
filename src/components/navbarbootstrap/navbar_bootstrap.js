@@ -25,9 +25,8 @@ const NavbarBoot = () => {
             Contactanos
           </Link>
           <ul className="dropdown-menu">
-            {/* <li><Link className="dropdown-item" to="/contacto">Donde nos encontrar</Link></li> */}
-           {/*  <li><Link className="dropdown-item" to="/contacto">Trabaje con nosotros</Link></li> */}
-            <li><Link className="dropdown-item" to="/contacto">Contactos</Link></li>
+          
+            <li> <Link className="dropdown-item" to="/contacto">Contactos</Link></li>
             </ul>
         </li>
       </ul>
@@ -43,6 +42,3 @@ export default NavbarBoot
 
 
 
-/* <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/" >Inicio</Link>
-        </li> */

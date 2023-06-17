@@ -1,5 +1,5 @@
-import React from 'react';
-import './contacto.css';
+import React from "react";
+import "./contacto.css";
 
 const Contacto = () => {
   return (
@@ -69,7 +69,8 @@ const Contacto = () => {
             </button>
 
             <div className="aviso">
-              <span className="obligatorio"> *</span>los campos son obligatorios.
+              <span className="obligatorio"> *</span>los campos son
+              obligatorios.
             </div>
           </form>
         </div>
@@ -85,7 +86,7 @@ const Contacto = () => {
           title="Mapa"
           width="600"
           height="450"
-          style={{ border: '0', width: '100%', height: '100%' }}
+          style={{ border: "0", width: "100%", height: "100%" }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

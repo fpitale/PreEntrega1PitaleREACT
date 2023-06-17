@@ -1,14 +1,15 @@
 import { Col, Row } from "react-bootstrap";
 import { Item } from "../Item";
+import "./item-list.css";
 
 const ItemList = ({ items }) => {
   return (
     <Row>
       {items.map((item) => (
-        <Col key={item.id}>
+        <Col key={item.id} className="Item-estilo">
           <Item
             name={item.name}
-            description={item.description}
+            /* description={item.description} */
             id={item.id}
             categoryId={item.categoryId}
             onItemClicked={item.onItemClicked}

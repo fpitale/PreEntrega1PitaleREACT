@@ -1,5 +1,6 @@
-import { Button } from "bootstrap"
+ import { Button } from "bootstrap"
 import { useState } from "react"
+import "../item-count/itemcount.css"; // Importe o arquivo CSS aqui
 
 const ItemCount = ({stock, initial, onAdd})=> {
     const [quantity, setQuantity] = useState(initial)
@@ -34,4 +35,4 @@ const ItemCount = ({stock, initial, onAdd})=> {
 
 }
 
-export {ItemCount}
+export {ItemCount} 

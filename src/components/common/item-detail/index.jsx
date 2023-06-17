@@ -1,18 +1,17 @@
 import { Card, Col, Row } from "react-bootstrap";
-import { Item } from "../Item";
+import "./detail.css";
+const ItemDetail = ({ id, name, description, precio, images }) => {
+  console.log(precio);
 
-const ItemDetail = ({ id, name, description, precio }) => {
   return (
     <Row>
       <Col>
-        <Card key={id}>
+        <Card key={id} className="estilosDetail">
           <Card.Body>
-            <Card.Title>{name}</Card.Title>
-            <Card.Text>{description}</Card.Text>
-            <Card.Text>${precio}</Card.Text>
-            {/* <Button variant="primary"
-              onClick={onItemClicked} 
-            > {textButton} </Button> */}
+            <Card.Title className="name">{name}</Card.Title>
+            <Card.Subtitle className="descr"> {description}</Card.Subtitle>
+            <Card.Text className="precio">${precio}</Card.Text>
+            <img src={images} alt="Item" />
           </Card.Body>
         </Card>
       </Col>

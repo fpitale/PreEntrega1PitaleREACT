@@ -1,6 +1,6 @@
 import React from "react";
 import "./presentacion.css";
-import { ItemCount } from "../../components/item-count/itemcount.js";
+/* import { ItemCount } from "../../components/item-count/itemcount.js"; */
 
 const Presentacion = () => {
   return (
@@ -29,11 +29,6 @@ const Presentacion = () => {
           indispensable para cuidar la salud y mejorar la calidad de vida de
           nuestros animales de compañía.
         </p>
-        <ItemCount
-          initial={1}
-          stock={10}
-          onAdd={(quantity) => console.log("Cantidad agregada", quantity)}
-        />
       </div>
     </div>
   );

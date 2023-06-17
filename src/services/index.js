@@ -1,4 +1,4 @@
 export {getCategories, getCategoryById} from "./categories"
-export { getItemById, getItems } from '../../services/Itens';
+export {getItems, getItemById } from './Itens/index';
 export {} from "../components/barra-navegacion"
 export {getProductsByCategory, getProducts, getProduct} from "../tmp"

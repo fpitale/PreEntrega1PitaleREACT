@@ -1,26 +1,30 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-/* import { useParams } from "react-router-dom"; */
-/* import { getItenById, getItens } from "../../services"; */
 import { getItems, getItemById } from "../../services/Itens";
 import { ItemDetail } from "../../components/common/item-detail";
-import { Item } from "../../components/common/Item";
+import { ItemCount } from "../../components/item-count/itemcount";
 
 const ItemDetailContainer = () => {
   const { id } = useParams();
-  const [Items, setItems] = useState();
+  const [item, setItem] = useState(null);
 
   useEffect(() => {
     getItemById(id).then((data) => {
-      setItems(data);
+      setItem(data);
     });
-  }, []);
+  }, [id]);
 
-  if (!Item) return <div>Carregando...</div>;
+  const handleAddToCart = (quantity) => {
+    console.log("Quantidade adicionada:", quantity);
+    // Aqui você pode adicionar a lógica para adicionar o item ao carrinho
+  };
+
+  if (!item) return <div>Carregando...</div>;
 
   return (
     <div>
-      <ItemDetail {...Item} />
+      <ItemDetail {...item} />
+      <ItemCount initial={1} stock={10} onAdd={handleAddToCart} />
     </div>
   );
 };
