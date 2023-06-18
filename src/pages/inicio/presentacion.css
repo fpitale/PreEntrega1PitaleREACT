@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   background-image: linear-gradient(to left, #509593, #3E6D9C);
-  /* background-color: #3E6D9C; */
   font-size: 30px;
+  margin-bottom: 20px; /* Adicione a margem inferior desejada */
 }
 
 .perros_y_gatos {
@@ -12,14 +12,25 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 60px; /* Adicione a margem inferior desejada */
   width: 500px;
   height: auto;
   object-fit: contain;
 }
 
 .texto p {
-  font-size: 30px; /* Altere o tamanho das letras conforme necessário */
+  font-size: 30px;
   text-align: center;
   padding: 20px;
+}
+
+.perros_y_gatos {
+  width: 500px;
+  height: auto;
+  background-image: linear-gradient(to left, #509593, #3E6D9C);
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 20px;
+  align-items: center;
 }

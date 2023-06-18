@@ -1,6 +1,5 @@
 import React from "react";
 import "./presentacion.css";
-/* import { ItemCount } from "../../components/item-count/itemcount.js"; */
 
 const Presentacion = () => {
   return (
@@ -15,11 +14,7 @@ const Presentacion = () => {
         </p>
       </div>
 
-      <img
-        className="perros_y_gatos"
-        src="/img/presentacion/perros.jpeg"
-        alt="Perros"
-      />
+      <img className="perros_y_gatos" src="/img/perros.jpeg" alt="Perros" />
 
       <div className="texto">
         <p>

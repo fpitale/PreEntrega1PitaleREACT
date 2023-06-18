@@ -1,40 +1,34 @@
-.estilosDetail { display: flex;
-    background-image: linear-gradient(to left, #509593, #3E6D9C);
-       border: 1px solid #ccc;
-       border-radius: 4px;
-       padding: 10px;
-       margin-top: 50px;
-       align-items: center;
-       height: auto;
-       font-family: Arial, sans-serif;
-       font-size: 50px;
-       
-      }
+.estilosDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh; 
+}
 
-      .precio{
-        display: flex;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
-        margin-top: 50px;
-        align-items: center;
-        height: auto;
-        font-family: Arial, sans-serif;
-        font-size: 20px;
-        color: yellow;
-      }
+.nameD {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-      .name {  display: flex;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        padding: 10px;
-        margin-top: 50px;
-        align-items: center;
-        height: auto;
-        font-family: Arial, sans-serif;
-        font-size: 80px;}
-        
+.descr {
+  font-size: 15px;
 
-        .descri{
-            font-size: 80px;
-        }
+  margin-bottom: 10px;
+}
+
+.precio {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+.estilosDetail {
+  max-width: 400px; 
+  margin: 0 auto; 
+ 
+}
