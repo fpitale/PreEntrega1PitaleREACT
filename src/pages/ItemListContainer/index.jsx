@@ -117,6 +117,7 @@ const ItemListContainer = () => {
 
 export { ItemListContainer };
  */
+
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
@@ -146,6 +147,11 @@ const ItemListContainer = () => {
     }
   }, [catId, showAllItems]);
 
+  useEffect(() => {
+    console.log(items);
+    console.log(datos);
+  }, [items]);
+
   const handleShowAllItems = () => {
     setShowAllItems(true);
     navigate("/");
@@ -156,8 +162,6 @@ const ItemListContainer = () => {
     navigate(`/category/${categoryId}`);
   };
 
-  console.log(items);
-  console.log(datos);
   return (
     <>
       <Presentacion />
@@ -186,10 +190,10 @@ const ItemListContainer = () => {
         </div>
 
         <ItemList
-          className="itemlist"
+          className="itemlist-container"
           items={items.map((item) => ({
             ...item,
-            textButton: "Ver detalle",
+            textButton: "Ver detalhes",
             onItemClicked: () => navigate(`/item-detail/${item.id}`),
           }))}
         />
