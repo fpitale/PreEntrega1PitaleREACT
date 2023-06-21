@@ -89,14 +89,29 @@ export const getProducts = () => {
       }, 2000);
     });
   };
-  export const getProductsByCategory = (category) => {
+
+
+  /* export const getProductsByCategory = (category) => {
     return new Promise((res) => {
       const productos = items.filter((product) => product.category === category);
       setTimeout(() => {
         res(productos);
       }, 2000);
     });
+  }; */
+
+
+  export const getProductsByCategory = (categoryId) => {
+    return new Promise((resolve) => {
+      const filteredProducts = items.filter(
+        (item) => item.categoryId === categoryId
+      );
+      resolve(filteredProducts);
+    });
   };
+
+
+    
   export const getProduct = (id) => {
     return new Promise((resolve) => {
       const productoFiltrado = items.find((p) => p.id === parseInt(id));

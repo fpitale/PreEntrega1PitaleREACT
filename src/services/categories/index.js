@@ -1,4 +1,4 @@
-import { categories } from '../../tmp/data';
+/* import { categories } from '../../tmp/data';
 
 const getCategories = async () => {
   return new Promise((resolve, reject) => {
@@ -13,3 +13,4 @@ const getCategoryById = async (id) => {
 };
 
 export { getCategories, getCategoryById};
+ */
