@@ -1,8 +1,6 @@
 import { Card, Col, Row } from "react-bootstrap";
 import "./detail.css";
 const ItemDetail = ({ id, name, description, precio, images }) => {
-  console.log(precio);
-
   return (
     <Row>
       <Col>
