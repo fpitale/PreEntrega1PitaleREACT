@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import perroygato from "../../assests/perroygato.jpg";
+import perroygato from "../../assets/perroygato.jpg";
 import "./header.css";
 
 const Header = () => {
