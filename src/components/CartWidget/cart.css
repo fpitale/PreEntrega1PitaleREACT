@@ -1,12 +1,30 @@
+/* .cart {
+  display: flex;
+  
+  background-color: black;
+  width: 3%;
+  height: 10px;
+  
+  top: 2%;
+  right: 0;
+}
+ */
 
-    .cart { background-color: black;
-         width: 3%;
-    height: 10px;
-        position: fixed;
-        top: 2%;
-        right: 0px;
+ .CartWidgetWrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 
-      /*   transform: translateY(-50%); */
-    }
-    
-    
+.CartWidgetItems {
+  display: flex;
+  align-items: center;
+}
+
+.CartQuantity {
+  margin-right: 5px;
+}
+
+.CartImg {
+  width: 20px;
+  height: 20px;
+}
