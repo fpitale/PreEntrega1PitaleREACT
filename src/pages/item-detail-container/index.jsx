@@ -26,8 +26,8 @@ const ItemDetailContainer = () => {
       id: item.id,
       name: item.name,
       description: item.description,
-      price: item.price,
-      quantity: quantity,
+      precio: item.precio,
+      quantity: item.quantity,
     };
     addItem(itemToAdd, quantity);
 
