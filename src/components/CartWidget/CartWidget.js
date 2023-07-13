@@ -4,6 +4,7 @@ import { CartContext } from '../../context/CartContext';
 import cart from '../assets/cart.svg';
 import './cart.css';
 
+
 const CartWidget = () => {
   const { getQuantity } = useContext(CartContext);
 
